@@ -1,0 +1,1 @@
+npx playwright test tests/amazona.spec.ts

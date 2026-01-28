@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { Page } from '@playwright/test';
+import { Page, Locator } from '@playwright/test';
 
 export class AmazonPage {
     readonly page: Page;
@@ -39,6 +39,19 @@ export class AmazonPage {
         }
     }
 
+    // async addToCartFromNewTab() {
+    //     const context = this.page.context();
+
+    //     const [newPage] = await Promise.all([
+    //         context.waitForEvent('page'),
+    //     ]);
+
+    //     await newPage.waitForLoadState();
+    //     const addToCart: Locator = newPage.locator("//input[@id='add-to-cart-button']");
+    //     await addToCart.scrollIntoViewIfNeeded();
+    //     await addToCart.click();
+    // }
+
 
 }
 
@@ -48,7 +61,7 @@ test('Search product on Amazon', async ({ page }) => {
     await amazonPage.LunchUrl();
     await amazonPage.searchProduct('iphone');
     await amazonPage.verifyResultsHeading();
-    await amazonPage.clickExpectedProduct("iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; White Titanium");
-
+    await amazonPage.clickExpectedProduct(" aaas iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; White Titanium");
+    // await amazonPage.addToCartFromNewTab();
 });
 

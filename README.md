@@ -1,8 +1,10 @@
 Run command -> npx playwright test tests/amazon.spec.ts
 
+npx playwright test automation/dropdown.spec.ts
+
 ------------------------------------------------------
 
-Remove History VS Code Terminal ->
+Remove History VS Code Terminal PowerShell  ->
 Remove-Item (Get-PSReadLineOption).HistorySavePath
 
 ------------------------------------------------------
@@ -13,3 +15,4 @@ git push -u origin main
 
 
 ------------------------------------------------------
+

@@ -30,7 +30,7 @@ export default defineConfig({
         viewport: null,
         launchOptions: {
             args: ["--start-maximized"], // 👈 opens browser maximized
-            slowMo: 1000,
+            slowMo: 3000,
         },
         /* Base URL to use in actions like `await page.goto('/')`. */
         // baseURL: 'http://localhost:3000',

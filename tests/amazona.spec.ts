@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 
 //  Step: 2
 
-test('serach product',async({page})=>{
+test('Serach Product',async({page})=>{
 
     await page.fill('//input[@id="twotabsearchtextbox"]','Iphone');
     await page.click('//input[@id="nav-search-submit-button"]');

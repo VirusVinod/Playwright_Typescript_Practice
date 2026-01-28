@@ -1,1 +1,1 @@
-npx playwright test tests/amazona.spec.ts
+Run command -> npx playwright test tests/amazona.spec.ts

@@ -51,3 +51,4 @@ test('Search product on Amazon', async ({ page }) => {
     await amazonPage.clickExpectedProduct("iPhone 16 Pro Max 1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; White Titanium");
 
 });
+

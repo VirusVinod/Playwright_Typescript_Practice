@@ -9,7 +9,22 @@ test('Acction Conncept', async ({ page }) => {
     await hoverElement.hover();
 
     const innerElementHover = page.locator("//button[@id='products-dd-tab-3']");
-    await innerElementHover.hover();  
-      
+    await innerElementHover.hover();
 
- });
+
+    const expectedProduct = 'App Automate';
+    const productSList = page.locator("//div[@id='products-dd-tabpanel-3-inner-1']//a");
+    const count = await productSList.count();
+
+    for (let i = 0; i < count; i++) {
+
+        const product = productSList.nth(i);
+        const actualProduct = await product.textContent();
+        if (actualProduct?.trim() == expectedProduct) {
+            await product.click();
+            console.log(`Clicked on the product: ${actualProduct}`);
+            break;
+        }
+    }
+
+});

@@ -1,7 +1,6 @@
 Run command -> npx playwright test tests/amazon.spec.ts
 
-npx playwright test automation/dropdown.spec.ts
-
+npx playwright test automation/actionsConcept.spec.ts
 ------------------------------------------------------
 
 Remove History VS Code Terminal PowerShell  ->

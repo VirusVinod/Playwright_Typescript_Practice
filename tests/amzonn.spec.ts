@@ -28,7 +28,6 @@ test('test case', async ({ page }) => {
             await products.click();
             break;
         }
-
     }
 
 

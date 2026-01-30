@@ -8,9 +8,9 @@ test('Login Page', async ({ page }) => {
     await userName.fill("standard_user");
 
     const password = page.locator("//input[@id='password']");
-    password.fill("secret_sauce");
+    await password.fill("secret_sauce");
 
     const loginBtnClick = page.locator("//input[@id='login-button']");
-    loginBtnClick.click();
+    await loginBtnClick.click();
 
 })

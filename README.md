@@ -1,4 +1,4 @@
-Run command -> npx playwright test tests/amzonn.spec.ts
+Run command -> npx playwright test tests/login.spec.ts
 
 npx playwright test automation/actionsConcept.spec.ts
 ------------------------------------------------------

@@ -10,4 +10,7 @@ test('Login Page', async ({ page }) => {
     const password = page.locator("//input[@id='password']");
     password.fill("secret_sauce");
 
+    const loginBtnClick = page.locator("//input[@id='login-button']");
+    loginBtnClick.click();
+
 })

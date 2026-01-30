@@ -7,4 +7,7 @@ test('Login Page', async ({ page }) => {
     const userName = page.locator("//input[@id='user-name']");
     await userName.fill("standard_user");
 
+    const password = page.locator("//input[@id='password']");
+    password.fill("secret_sauce");
+
 })

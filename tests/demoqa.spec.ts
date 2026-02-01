@@ -43,6 +43,12 @@ test('demoqa page', async ({ page }) => {
         }
     }
 
+    const hobbies = page.locator("//input[@type='checkbox']");
+    const count = await hobbies.count();
+
+    for (let i = 0; i < count; i++) {
+        await hobbies.nth(i).click({ force: true });
+    }
 
 
 

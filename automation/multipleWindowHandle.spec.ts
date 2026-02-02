@@ -32,5 +32,6 @@ test('Multiple window handle', async ({ page, context }) => {
     await targetPage!.fill('#firstName', 'Vinod Singh');
     await targetPage!.fill('#lastName', 'Singh');
 
+    await parentPage.bringToFront();
 
 })

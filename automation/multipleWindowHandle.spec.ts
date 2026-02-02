@@ -27,6 +27,10 @@ test('Multiple window handle', async ({ page, context }) => {
         }
     }
 
+    expect(targetPage).toBeDefined();
+
+    await targetPage!.fill('#firstName', 'Vinod Singh');
+    await targetPage!.fill('#lastName', 'Singh');
 
 
 })

@@ -1,6 +1,6 @@
 Run command -> npx playwright test tests/demoqa.spec.ts
 
-npx playwright test automation/actionsConcept.spec.ts
+npx playwright test automation/multipleWindowHandle.spec.ts
 ------------------------------------------------------
 
 Remove History VS Code Terminal PowerShell  ->
